@@ -1,12 +1,16 @@
-package br.com.caelum.leilao.dominio;
+package br.com.caelum.leilao.servico;
 
 import org.junit.Assert;
 import org.junit.Test;
 
+import br.com.caelum.leilao.dominio.Lance;
+import br.com.caelum.leilao.dominio.Leilao;
+import br.com.caelum.leilao.dominio.Usuario;
+
 public class TesteDoAvaliador {
 
 	@Test
-	public void deveEntenderLance() {
+	public void deveEntenderLanceEmOrdemCrescente() {
 
 		// parte 1: cenario
 		Usuario joao = new Usuario("João");
